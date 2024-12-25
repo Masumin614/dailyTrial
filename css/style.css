@@ -1,0 +1,257 @@
+body {
+  font-family: "Josefin Sans", "Noto Sans JP", serif;
+  letter-spacing: 0.05rem;
+  color: #3c301e;
+}
+
+img {
+  width: 100%;
+}
+
+/* ヘッダー */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid rgba(241, 238, 228, 0.25);
+}
+.header-inner {
+  padding: 12px;
+}
+
+.header-logo {
+  width: 200px;
+  margin: 0 auto;
+}
+.header-nav {
+  margin-top: 10px;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.header-nav-item {
+  color: #ffffff;
+}
+/* ドロワーメニュー */
+.drawer {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  font-size: 12px;
+}
+
+.drawer_menu + .drawer_menu {
+  margin-top: 10px;
+}
+
+/* 共通エリア */
+.inner {
+  padding: 0 40px;
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-heading-main {
+  display: block;
+  font-size: 40px;
+}
+.section-heading-sub {
+  display: block;
+  font-size: 12px;
+}
+/* About */
+.about {
+  background: #f1eee4;
+  padding: 50px 0;
+}
+
+.about-content-text {
+  margin-top: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 2;
+}
+.about-text + .about-text {
+  margin-top: 20px;
+}
+
+/* Menu */
+.menu {
+  background: #f1eee4;
+  padding: 50px 0;
+}
+
+.menu-item + .menu-item {
+  margin-top: 62px;
+}
+
+.menu-text-contents {
+  text-align: center;
+  padding: 16px 10px;
+}
+
+.menu-name-main {
+  display: block;
+  font-size: 18px;
+}
+
+.menu-name-sub {
+  display: block;
+  font-size: 12px;
+  color: #a98c5f;
+  margin-top: 10px;
+}
+
+.menu-text {
+  font-size: 14px;
+  color: #a98c5f;
+  margin-top: 20px;
+}
+
+/* Shop */
+.shop {
+  background: url(../img/sp/bg-shop.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.shop-inner {
+  padding: 0 20px;
+}
+
+.section-heading-l {
+  color: #ffff;
+}
+
+.shop-text {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px;
+  opacity: 0.7;
+  border: none;
+  font-family: "Josefin Sans";
+  border-radius: 5px;
+}
+
+.form-submit {
+  display: block;
+  margin: 10px auto;
+  width: 120px;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #a98c5f;
+  color: #fff;
+  font-family: "Josefin Sans";
+}
+
+/* footer */
+.footer {
+  background: #3c301e;
+  padding-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 12px;
+}
+
+.footer-nav-list {
+  display: flex;
+  padding: 0 15px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.sns-img {
+  width: 50px;
+}
+
+.footer-nav-link-text {
+  font-size: 12px;
+}
+
+.footer-copy-wrapper {
+  border-top: 1px solid rgba(241, 238, 228, 0.25);
+  margin-top: 40px;
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 16px;
+  }
+  .header-inner {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .header-logo {
+    margin: 0;
+  }
+  .inner {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+  .about {
+    padding: 100px 0;
+  }
+  .about-contents {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .section-heading-main {
+    font-size: 60px;
+  }
+  .about-content-text {
+    margin: 0;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+  .menu-list {
+    display: flex;
+    gap: 20px;
+  }
+  .menu-item + .menu-item {
+    margin-top: 0px;
+  }
+  .shop-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-nav-list {
+    justify-content: center;
+  }
+}
