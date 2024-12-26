@@ -36,6 +36,7 @@ img {
 }
 .header-nav-item {
   color: #ffffff;
+  font-family: "Josefin Sans", "Noto Sans JP", serif;
 }
 /* ドロワーメニュー */
 .drawer {
